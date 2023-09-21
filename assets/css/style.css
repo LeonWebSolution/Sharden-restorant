@@ -1476,15 +1476,17 @@ body{
 @media (max-width:520px) {
     .navigation-page__menu{
         opacity: 1;
-        top: -30px;
+        top: 0px;
         left: 0;
         width: 100%;
         height: 100vh;
         border-radius: 0;
-        transform: translateY(-100%);
+        transform: translateY(-200%);
     }
     .navigation-page__menu.active{
+        position: fixed;
         transform: translateY(0%);
+        padding: 30px;
     }
     .navigation-page__menu.active .btn-close__menu{
         display: block;
