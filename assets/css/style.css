@@ -1483,6 +1483,9 @@ body{
         border-radius: 0;
         transform: translateY(-200%);
     }
+    body.hidden{
+        overflow: hidden;
+    }
     .navigation-page__menu.active{
         position: fixed;
         transform: translateY(0%);

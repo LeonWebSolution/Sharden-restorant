@@ -1,14 +1,15 @@
 $(document).ready(function () {
-    $(".menu-btn").click(function() {
-      $(".navigation-page__menu").toggleClass("active");
-      $(this).toggleClass("active");
-  });
-  
-  $(".btn-close__menu").click(function() {
-      $(".navigation-page__menu").removeClass("active");
-      $(".menu-btn").removeClass("active");
-  });
+  $(".menu-btn").click(function() {
+    $(".navigation-page__menu").toggleClass("active");
+    $(this).toggleClass("active");
+    $("body").toggleClass("hidden");
+});
 
+$(".btn-close__menu").click(function() {
+    $(".navigation-page__menu").removeClass("active");
+    $(".menu-btn").removeClass("active");
+    $("body").removeClass("hidden");
+});
     $(".search-btn").click(function () {
         $(this).addClass("close");
         $(".search-block").addClass("active");
