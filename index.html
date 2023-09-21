@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHARDEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/nullstyle.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- ДАННЫЙ ПРОЕКТ РАЗРАБОТАН "RESHEV" -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-left">
+                    <button class="menu-btn">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>Меню</p>
+                    </button>
+                    <nav class="navigation-page__menu">
+                        <div class="btn-close__menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M1 1L16 16" stroke="#AC624F" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M16 1L1 16" stroke="#AC624F" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <ul class="navigation-page__list">
+                            <li class="navigation-page-item">
+                                <a href="#" class="navigation-page__link active">Главная</a>
+                                <a href="./new.html" class="navigation-page__link">Новинки</a>
+                                <a href="#" class="navigation-page__link">Горячее</a>
+                                <a href="#" class="navigation-page__link">Салаты</a>
+                            </li>
+                            <li class="navigation-page-item">
+                                <a href="#" class="navigation-page__link">Супы</a>
+                                <a href="#" class="navigation-page__link">Пицца</a>
+                                <a href="#" class="navigation-page__link">Закуски</a>
+                            </li>
+                            <li class="navigation-page-item">
+                                <a href="#" class="navigation-page__link">Детское меню</a>
+                                <a href="#" class="navigation-page__link">Напитки</a>
+                                <a href="#" class="navigation-page__link">Соусы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="location-select">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="21" viewBox="0 0 14 21" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33247 0.66687C11.0144 0.66687 13.9991 3.61128 13.9991 7.2434C13.9991 8.44143 13.6753 9.56397 13.107 10.532C12.7282 11.1774 10.8033 14.4656 7.33247 20.3965C3.86163 14.4656 1.93677 11.1774 1.55791 10.532C0.989615 9.56397 0.665806 8.44143 0.665806 7.2434C0.665806 3.61128 3.65057 0.66687 7.33247 0.66687ZM7.33247 4.42489C5.75452 4.42489 4.47533 5.68678 4.47533 7.2434C4.47533 8.80002 5.75452 10.0619 7.33247 10.0619C8.91043 10.0619 10.1896 8.80002 10.1896 7.2434C10.1896 5.68678 8.91043 4.42489 7.33247 4.42489Z" fill="#EBBD71"/>
+                        </svg>
+                        <select name="" id="">
+                            <option value="Мытищи">Мытищи</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="logo">
+                    <img class="logo-img" src="./assets/images/logo.png" alt="">
+                </a>
+                <div class="header-right">
+                    <button class="lk-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                            <g opacity="0.3">
+                            <path d="M0.99939 21.3333C0.99939 18.7622 2.10581 16.2819 4.09974 14.4422C6.09591 12.6005 8.81657 11.5555 11.6661 11.5555C14.5156 11.5555 17.2362 12.6005 19.2324 14.4422C21.2263 16.2819 22.3327 18.7622 22.3327 21.3333" stroke="#AC624F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.1935 5.9486C17.1935 8.86176 14.8155 11.2307 11.873 11.2307C8.93058 11.2307 6.55259 8.86176 6.55259 5.9486C6.55259 3.03544 8.93058 0.666545 11.873 0.666545C14.8155 0.666545 17.1935 3.03544 17.1935 5.9486Z" stroke="#AC624F" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                        <p>Личный кабинет</p>
+                    </button>
+                    <div class="header-right__buttons">
+                        <div class="search-block">
+                            <div class="block-input">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M17.462 15.9771L17.8082 15.5147C19.0208 13.8952 19.74 11.8834 19.74 9.70372C19.74 4.34451 15.3955 0 10.0362 0C4.67703 0 0.33252 4.34451 0.33252 9.70372C0.33252 15.0629 4.67703 19.4074 10.0362 19.4074C12.2159 19.4074 14.2278 18.6883 15.8472 17.4757L16.3097 17.1294L19.7161 20.5359C20.0343 20.8541 20.5502 20.8541 20.8684 20.5359V20.5359C21.1866 20.2177 21.1866 19.7018 20.8684 19.3836L17.462 15.9771ZM10.0362 1.62963C5.57705 1.62963 1.96215 5.24453 1.96215 9.70372C1.96215 14.1629 5.57705 17.7778 10.0362 17.7778C12.266 17.7778 14.2834 16.8751 15.7455 15.4129C17.2077 13.9508 18.1103 11.9334 18.1103 9.70372C18.1103 5.24453 14.4954 1.62963 10.0362 1.62963Z" fill="#AC624F"/>
+                                </svg>
+                                <input type="search" placeholder="Поиск">
+                            </div>
+                            <button class="search-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M17.462 15.9771L17.8082 15.5147C19.0208 13.8952 19.74 11.8834 19.74 9.70372C19.74 4.34451 15.3955 0 10.0362 0C4.67703 0 0.33252 4.34451 0.33252 9.70372C0.33252 15.0629 4.67703 19.4074 10.0362 19.4074C12.2159 19.4074 14.2278 18.6883 15.8472 17.4757L16.3097 17.1294L19.7161 20.5359C20.0343 20.8541 20.5502 20.8541 20.8684 20.5359V20.5359C21.1866 20.2177 21.1866 19.7018 20.8684 19.3836L17.462 15.9771ZM10.0362 1.62963C5.57705 1.62963 1.96215 5.24453 1.96215 9.70372C1.96215 14.1629 5.57705 17.7778 10.0362 17.7778C12.266 17.7778 14.2834 16.8751 15.7455 15.4129C17.2077 13.9508 18.1103 11.9334 18.1103 9.70372C18.1103 5.24453 14.4954 1.62963 10.0362 1.62963Z" fill="#AC624F"/>
+                                </svg>
+                            </button>
+                            <button class="search-btn-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="22" height="22" x="0" y="0" viewBox="0 0 35 35" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M28.814 30.064a1.247 1.247 0 0 1-.884-.367L5.3 7.07A1.249 1.249 0 0 1 7.07 5.3L29.7 27.93a1.251 1.251 0 0 1-.884 2.134z" fill="#AC624F" data-original="#000000"></path><path d="M6.186 30.064A1.251 1.251 0 0 1 5.3 27.93L27.93 5.3a1.25 1.25 0 0 1 1.77 1.77L7.07 29.7a1.247 1.247 0 0 1-.884.364z" fill="#AC624F" data-original="#000000"></path></g></svg>
+                            </button>
+                        </div>
+                        <button class="shopping-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26" fill="none">
+                                <path d="M27.3329 9.66663L18.444 0.666626M27.3329 9.66663H0.66626M27.3329 9.66663L25.3227 19.8434C24.7688 22.6479 22.3366 24.6666 19.5119 24.6666H8.48733C5.66254 24.6666 3.23045 22.6479 2.67647 19.8434L0.66626 9.66663M0.66626 9.66663L9.55515 0.666626" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="search-block mobile">
+                    <div class="block-input">
+                        <input type="search" placeholder="Поиск...">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M17.462 15.9771L17.8082 15.5147C19.0208 13.8952 19.74 11.8834 19.74 9.70372C19.74 4.34451 15.3955 0 10.0362 0C4.67703 0 0.33252 4.34451 0.33252 9.70372C0.33252 15.0629 4.67703 19.4074 10.0362 19.4074C12.2159 19.4074 14.2278 18.6883 15.8472 17.4757L16.3097 17.1294L19.7161 20.5359C20.0343 20.8541 20.5502 20.8541 20.8684 20.5359V20.5359C21.1866 20.2177 21.1866 19.7018 20.8684 19.3836L17.462 15.9771ZM10.0362 1.62963C5.57705 1.62963 1.96215 5.24453 1.96215 9.70372C1.96215 14.1629 5.57705 17.7778 10.0362 17.7778C12.266 17.7778 14.2834 16.8751 15.7455 15.4129C17.2077 13.9508 18.1103 11.9334 18.1103 9.70372C18.1103 5.24453 14.4954 1.62963 10.0362 1.62963Z" fill="#AC624F"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <img class="rec-img" src="./assets/images/rec1.png" alt="">
+        </header>
+        <main class="main">
+            <section class="main-banner container" >
+                <div class="main-container" style="background: url('./assets/images/main-banner.jpg');">
+                    <div class="main-banner__info">
+                        <h1 class="main-banner__title">Вкус и атмосфера Грузии</h1>
+                        <h3 class="main-banner__suptitle">Новые блюда от нашего <br> шеф-повара</h3>
+                        <button class="main-banner__btn">Подробнее</button>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="index-bg">
+                    <img src="./assets/images/index-bg.png" alt="">
+                </div>
+                <div class="container">
+                    <h3 class="section-title">Наш каталог</h3>
+                <div class="catalog-wrapper">
+                    <a href="#" class="catalog-item" style="background: url('./assets/images/catalog1.jpg');">
+                        <div class="catalog-item__content">
+                            <div class="catalog-name">Без мяса</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M1.28854 1.41034L8.77137 8.89317L1.28854 16.376" stroke="white" stroke-width="1.87071" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item" style="background: url('./assets/images/catalog2.jpg');">
+                        <div class="catalog-item__content">
+                            <div class="catalog-name">Из печи</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M1.28854 1.41034L8.77137 8.89317L1.28854 16.376" stroke="white" stroke-width="1.87071" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item" style="background: url('./assets/images/catalog3.jpg');">
+                        <div class="catalog-item__content">
+                            <div class="catalog-name">Детское</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M1.28854 1.41034L8.77137 8.89317L1.28854 16.376" stroke="white" stroke-width="1.87071" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item" style="background: url('./assets/images/catalog4.jpg');">
+                        <div class="catalog-item__content">
+                            <div class="catalog-name">Супы</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M1.28854 1.41034L8.77137 8.89317L1.28854 16.376" stroke="white" stroke-width="1.87071" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item" style="background: url('./assets/images/catalog5.jpg');">
+                        <div class="catalog-item__content">
+                            <div class="catalog-name">На огне</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M1.28854 1.41034L8.77137 8.89317L1.28854 16.376" stroke="white" stroke-width="1.87071" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item" style="background: url('./assets/images/catalog6.jpg');">
+                        <div class="catalog-item__content">
+                            <div class="catalog-name">Напитки</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M1.28854 1.41034L8.77137 8.89317L1.28854 16.376" stroke="white" stroke-width="1.87071" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item" style="background: url('./assets/images/catalog7.jpg');">
+                        <div class="catalog-item__content">
+                            <div class="catalog-name">Десерты</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M1.28854 1.41034L8.77137 8.89317L1.28854 16.376" stroke="white" stroke-width="1.87071" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item" style="background: url('./assets/images/catalog8.jpg');">
+                        <div class="catalog-item__content">
+                            <div class="catalog-name">Соусы</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M1.28854 1.41034L8.77137 8.89317L1.28854 16.376" stroke="white" stroke-width="1.87071" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="sale-banner container">
+                <div class="sale-banner__wrapper" style="background: url('./assets/images/sale-banner.jpg');">
+                    <div class="sale-banner__info">
+                        <h5 class="sale-banner__title">Акция</h5>
+                        <p class="sale-banner__suptitle">Скидка на холодные блюда 50%</p>
+                    </div>
+                    <div class="sale-btn__wrapper">
+                        <button class="sale-banner__btn">Узнать больше</button>
+                    </div>
+                </div>
+            </section>
+            <section class="about container">
+                <h3 class="section-title">Пару слов о нас</h3>
+                <div class="index-about-wrapper">
+                    <div class="index-about-item" style="background: url('./assets/images/about1.jpg');">
+                        <div class="index-about-item__content">
+                            <p class="index-about-item__subtitle">У нас</p>
+                            <h5 class="index-about-item__title">Свой мангал</h5>
+                        </div>
+                    </div>
+                    <div class="index-about-item" style="background: url('./assets/images/about2.jpg');">
+                        <p class="index-about-item__suptitle">Пятница-суббота</p>
+                        <div class="index-about-item__content">
+                            <p class="index-about-item__subtitle">Живая музыка</p>
+                            <h5 class="index-about-item__title">Имя исполнителя</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="index-adress container">
+                <div class="index-adress__wrapper">
+                    <img class="rec2" src="./assets/images/rec2.png" alt="">
+                    <div class="index-adress__left">
+                        <h5 class="index-adress__title">Укажите адрес, чтобы мы рассчитали время <span>доставки</span></h5>
+                        <div class="index-adress__tabs">
+                            <div class="index-adress__tab">
+                                <div class="index-adress__tab-title">Бесплатная доставка <br><span>от 2000 руб</span></div>
+                            </div>
+                            <div class="index-adress__tab">
+                                <div class="index-adress__tab-title">В среднем <br> привозим <span>за 45 мин</span></div>
+                            </div>
+                        </div>
+                        <div class="index-adress__job">
+                            <p class="index-adress__job-title">Режим работы:</p>
+                            <p class="index-adress__job-mode"><span>Пн-вс:</span> 12:00-23:00</p>
+                        </div>
+                    </div>
+                    <div class="index-adress__right">
+                        <div class="index-map">
+                            <img src="./assets/images/index-map.jpg" alt="" class="index-map__img">
+                        </div>
+                        <button class="index-adress-btn">Указать адрес</button>
+                    </div>
+                </div>
+            </section>
+            <section class="new container">
+                <h3 class="section-title">Новинки</h3>
+                <div class="new-slider">
+                    <div class="product-item new">
+                        <img class="product-img" src="./assets/images/prod1.jpg" alt="#">
+                        <h5 class="product-item__title">Пицца пеперони</h5>
+                        <div class="product-item__wrapper">
+                            <div class="product-price">750р</div>
+                            <button class="product-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                                    <circle cx="19.9996" cy="20.6667" r="20" fill="url(#paint0_linear_269_84)"/>
+                                    <path d="M19.9995 12.0952V28.6666" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.2854 20.3811L11.714 20.3811" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_269_84" x1="6.05223" y1="9.06675" x2="28.8416" y2="43.9286" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EBBD71"/>
+                                    <stop offset="1" stop-color="#EFA52C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-item new">
+                        <img class="product-img" src="./assets/images/prod2.jpg" alt="#">
+                        <h5 class="product-item__title">Жаренный сулугуни</h5>
+                        <div class="product-item__wrapper">
+                            <div class="product-price">470р</div>
+                            <button class="product-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                                    <circle cx="19.9996" cy="20.6667" r="20" fill="url(#paint0_linear_269_84)"/>
+                                    <path d="M19.9995 12.0952V28.6666" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.2854 20.3811L11.714 20.3811" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_269_84" x1="6.05223" y1="9.06675" x2="28.8416" y2="43.9286" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EBBD71"/>
+                                    <stop offset="1" stop-color="#EFA52C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-item new">
+                        <img class="product-img" src="./assets/images/prod3.jpg" alt="#">
+                        <h5 class="product-item__title">Чесночные гренки</h5>
+                        <div class="product-item__wrapper">
+                            <div class="product-price">250р</div>
+                            <button class="product-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                                    <circle cx="19.9996" cy="20.6667" r="20" fill="url(#paint0_linear_269_84)"/>
+                                    <path d="M19.9995 12.0952V28.6666" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.2854 20.3811L11.714 20.3811" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_269_84" x1="6.05223" y1="9.06675" x2="28.8416" y2="43.9286" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EBBD71"/>
+                                    <stop offset="1" stop-color="#EFA52C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-item new">
+                        <img class="product-img" src="./assets/images/prod4.jpg" alt="#">
+                        <h5 class="product-item__title">Пхали из фасоли</h5>
+                        <div class="product-item__wrapper">
+                            <div class="product-price">395р</div>
+                            <button class="product-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                                    <circle cx="19.9996" cy="20.6667" r="20" fill="url(#paint0_linear_269_84)"/>
+                                    <path d="M19.9995 12.0952V28.6666" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.2854 20.3811L11.714 20.3811" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_269_84" x1="6.05223" y1="9.06675" x2="28.8416" y2="43.9286" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EBBD71"/>
+                                    <stop offset="1" stop-color="#EFA52C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-item new">
+                        <img class="product-img" src="./assets/images/prod5.jpg" alt="#">
+                        <h5 class="product-item__title">Салат Тбилиси</h5>
+                        <div class="product-item__wrapper">
+                            <div class="product-price">530р</div>
+                            <button class="product-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                                    <circle cx="19.9996" cy="20.6667" r="20" fill="url(#paint0_linear_269_84)"/>
+                                    <path d="M19.9995 12.0952V28.6666" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.2854 20.3811L11.714 20.3811" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_269_84" x1="6.05223" y1="9.06675" x2="28.8416" y2="43.9286" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EBBD71"/>
+                                    <stop offset="1" stop-color="#EFA52C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-item new">
+                        <img class="product-img" src="./assets/images/prod1.jpg" alt="#">
+                        <h5 class="product-item__title">Пицца пеперони</h5>
+                        <div class="product-item__wrapper">
+                            <div class="product-price">750р</div>
+                            <button class="product-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                                    <circle cx="19.9996" cy="20.6667" r="20" fill="url(#paint0_linear_269_84)"/>
+                                    <path d="M19.9995 12.0952V28.6666" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.2854 20.3811L11.714 20.3811" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_269_84" x1="6.05223" y1="9.06675" x2="28.8416" y2="43.9286" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EBBD71"/>
+                                    <stop offset="1" stop-color="#EFA52C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-item new">
+                        <img class="product-img" src="./assets/images/prod1.jpg" alt="#">
+                        <h5 class="product-item__title">Пицца пеперони</h5>
+                        <div class="product-item__wrapper">
+                            <div class="product-price">750р</div>
+                            <button class="product-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                                    <circle cx="19.9996" cy="20.6667" r="20" fill="url(#paint0_linear_269_84)"/>
+                                    <path d="M19.9995 12.0952V28.6666" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.2854 20.3811L11.714 20.3811" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_269_84" x1="6.05223" y1="9.06675" x2="28.8416" y2="43.9286" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EBBD71"/>
+                                    <stop offset="1" stop-color="#EFA52C"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts container">
+                <h3 class="section-title">Наши контакты</h3>
+                <div class="contacts-wrapper">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="134" height="134" viewBox="0 0 134 134" fill="none">
+                            <path d="M129.234 105.003C130.792 106.566 131.959 108.474 132.642 110.573C133.326 112.671 133.505 114.901 133.166 117.081C132.827 119.262 131.98 121.332 130.692 123.124C129.404 124.916 127.712 126.38 125.754 127.396C114.561 133.378 101.521 134.907 89.248 131.676C56.6754 123.476 9.85646 76.6574 1.65665 44.0848C-1.57446 31.8121 -0.0455932 18.7715 5.93655 7.57893C6.95317 5.62032 8.41675 3.92865 10.2088 2.64091C12.0008 1.35317 14.0709 0.505546 16.2515 0.166681C18.432 -0.172185 20.6617 0.00723008 22.7601 0.6904C24.8584 1.37357 26.7663 2.54129 28.3294 4.099L42.2291 17.992C44.2335 19.9764 45.5899 22.5214 46.1195 25.2917C46.649 28.0621 46.3269 30.9279 45.1957 33.5117C43.9577 36.4105 42.1999 39.0585 40.0091 41.3248C24.1161 57.2178 76.1217 109.223 92.008 93.3237C94.2746 91.125 96.925 89.3604 99.8278 88.1171C102.411 86.984 105.277 86.6609 108.048 87.1906C110.819 87.7202 113.364 89.0777 115.347 91.0837L129.234 105.003Z" fill="url(#paint0_linear_269_169)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_269_169" x1="20.1749" y1="28" x2="96.1396" y2="144.206" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EBBD71"/>
+                            <stop offset="1" stop-color="#EFA52C"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="contact-item__content">
+                            <div class="contact-item__title">ТЕЛЕФОН</div>
+                            <p class="contact-item__text">Вы можете связаться с нами в любое время</p>
+                            <a class="contact-item__cont" href="tel:89055994422">+7 (905) 599-44-22</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="134" viewBox="0 0 102 134" fill="none">
+                            <path d="M50.9982 0C22.8413 0 0.331573 22.2135 0.331573 50C0.331573 59.6094 3.23435 67.0312 8.27463 74.5573L45.6677 130.547C46.8024 132.24 48.7552 133.333 50.9982 133.333C53.2413 133.333 55.2205 132.214 56.3288 130.547L93.7219 74.5573C98.7621 67.0312 101.665 59.6094 101.665 50C101.665 22.2135 79.1552 0 50.9982 0ZM50.9982 77.7604C35.4552 77.7604 22.8413 65.3125 22.8413 49.9479C22.8413 34.5833 35.4552 22.1354 50.9982 22.1354C66.5413 22.1354 79.1552 34.5833 79.1552 49.9479C79.1552 65.3125 66.5413 77.7604 50.9982 77.7604Z" fill="url(#paint0_linear_269_178)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_269_178" x1="15.6649" y1="28" x2="97.6649" y2="123.333" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EBBD71"/>
+                            <stop offset="1" stop-color="#EFA52C"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="contact-item__content">
+                            <div class="contact-item__title">Адрес</div>
+                            <p class="contact-item__text">Где мы находимся </p>
+                            <a class="contact-item__cont" href="">Просп. Космонавтов, <br> 12А, Королёв</a>
+                        </div>
+                    </div>
+                    <button class="contact-item__btn" style="background: url('./assets/images/map-view.png');">
+                        <p>Смотреть <br> <span>на карте</span></p>
+                    </button>
+                </div>
+            </section>
+            <img src="./assets/images/mountains.png" alt="" class="mountains-img">
+            <img src="./assets/images/mountain-mobile.png" alt="" class="mountains-img mobile">
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-nav">
+                    <div class="footer-nav__first">
+                        <div class="footer-title">Компания</div>
+                        <div class="footer-nav__list">
+                            <a class="footer-nav__item" href="#">Главная</a>
+                            <a class="footer-nav__item" href="#">Меню</a>
+                            <a class="footer-nav__item" href="#">О нас</a>
+                        </div>
+                    </div>
+                    <div class="footer-nav__second">
+                        <div class="footer-title">Пользыватель</div>
+                        <div class="footer-nav__list">
+                            <a class="footer-nav__item" href="#">Личный кабинет</a>
+                            <a class="footer-nav__item" href="#">Корзина</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-title">Контактная информация</div>
+                    <div class="footer-contact__list">
+                        <div class="footer-contact__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 14 21" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33311 0.453125C11.015 0.453125 13.9998 3.4014 13.9998 7.03828C13.9998 8.23788 13.676 9.3619 13.1077 10.3312C12.7288 10.9775 10.804 14.2699 7.33311 20.2086C3.86227 14.2699 1.93741 10.9775 1.55855 10.3312C0.990252 9.3619 0.666443 8.23788 0.666443 7.03828C0.666443 3.4014 3.65121 0.453125 7.33311 0.453125ZM7.33311 4.21607C5.75515 4.21607 4.47597 5.47962 4.47597 7.03828C4.47597 8.59694 5.75515 9.86049 7.33311 9.86049C8.91107 9.86049 10.1903 8.59694 10.1903 7.03828C10.1903 5.47962 8.91107 4.21607 7.33311 4.21607Z" fill="white"/>
+                            </svg>
+                            <p>Просп. Космонавтов, <br> 12А, Королёв</p>
+                        </div>
+                        <div class="footer-contact__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M17.4659 14.2465C17.6684 14.4472 17.8202 14.6922 17.909 14.9616C17.9979 15.2311 18.0212 15.5174 17.9771 15.7974C17.9331 16.0774 17.8229 16.3432 17.6555 16.5734C17.4881 16.8035 17.2682 16.9914 17.0135 17.122C15.5585 17.8901 13.8632 18.0864 12.2678 17.6715C8.03334 16.6186 1.94687 10.6066 0.880898 6.42389C0.460855 4.84794 0.659607 3.1734 1.43729 1.73615C1.56945 1.48465 1.75971 1.26742 1.99268 1.10206C2.22564 0.9367 2.49475 0.827857 2.77823 0.784343C3.0617 0.740829 3.35156 0.763868 3.62434 0.851594C3.89712 0.93932 4.14516 1.08927 4.34835 1.28929L6.15531 3.0733C6.41589 3.32811 6.59222 3.65492 6.66106 4.01066C6.72991 4.36641 6.68804 4.73441 6.54097 5.06619C6.38004 5.43844 6.15153 5.77846 5.86672 6.06948C3.80063 8.11031 10.5613 14.7884 12.6266 12.7467C12.9212 12.4643 13.2658 12.2377 13.6431 12.0781C13.979 11.9326 14.3516 11.8911 14.7118 11.9591C15.072 12.0271 15.4029 12.2014 15.6607 12.459L17.4659 14.2465Z" fill="white"/>
+                            </svg>
+                            <a href="tel:89055994422">+7 (905) 599-44-22</a>
+                        </div>
+                        <div class="footer-contact__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 24 18" fill="none">
+                                <path d="M21.3399 0.776123H2.65765C1.56053 0.776123 0.665466 1.66275 0.665466 2.75167V15.922C0.665466 17.0072 1.55655 17.8975 2.65765 17.8975H21.3399C22.4343 17.8975 23.3321 17.0139 23.3321 15.922V2.75167C23.3321 1.66644 22.4411 0.776123 21.3399 0.776123ZM21.0648 2.09315L12.041 11.0416L2.93917 2.09315H21.0648ZM1.99359 15.6493V3.0181L8.3898 9.30649L1.99359 15.6493ZM2.93271 16.5805L9.33294 10.2337L11.5756 12.4385C11.8352 12.6938 12.2541 12.6929 12.5127 12.4365L14.6993 10.2681L21.0649 16.5805H2.93271ZM22.004 15.6492L15.6384 9.33682L22.004 3.02438V15.6492Z" fill="white"/>
+                            </svg>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
