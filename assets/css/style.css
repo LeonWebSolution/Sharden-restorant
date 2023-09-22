@@ -784,6 +784,49 @@ body{
 
 /* END MENU */
 
+/* START ABOUT */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.about-text{
+    width: 100%;
+    color: var(--brown);
+    font-size: 32px;
+    font-weight: 400;
+}
+.about-text span{
+    background: linear-gradient(147deg, #EBBD71 18.68%, #EFA52C 93.9%);
+    background-clip: text;
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-wrapper__img{
+    display: grid;
+    grid-template-columns: 1fr 0.43fr;
+    gap: 53px;
+}
+.about-big__img{
+    border-radius: 33.333px;
+    width: 100%;
+}
+.about-small__img{
+    border-radius: 33.333px;
+    width: 100%;
+}
+.about-wrapper__img-right{
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+}
+.about-title{
+    margin-bottom: 0;
+}
+
+/* END ABOUT`*/
+
 .footer{
     padding: 86px 0 107px;
     background-color: var(--brown);
@@ -823,6 +866,19 @@ body{
 /* END FOOTER */
 
 @media (max-width: 1440px) {
+    .about-text{
+        font-size: 24px;
+        line-height: normal;
+    }
+    .about{
+        gap: 45px;
+    }
+    .about-wrapper__img{
+        gap: 40px;
+    }
+    .about-wrapper__img-right{
+        gap: 50px;
+    }
     .rec-img-1{
        zoom: 0.8;
     }
@@ -1238,6 +1294,9 @@ body{
 }
 
 @media (max-width: 768px){
+    .about-wrapper__img-right{
+        gap: 25px;
+    }
     .product-item__wrapper{
         flex-direction: row;
     }
@@ -1422,6 +1481,12 @@ body{
 }
 
 @media (max-width:600px) {
+    .about {
+        gap: 20px;
+    }
+    .about-title{
+        margin-bottom: 0 !important;
+    }
     .logo{
         order: 0;
         width: 100%;
@@ -1474,6 +1539,23 @@ body{
 }
 
 @media (max-width:520px) {
+    .about-text{
+        font-size: 16px;
+    }
+    .about-wrapper__img-right{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 17px;
+    }
+    .about-wrapper__img{
+        gap: 15px;
+    }
+    .about-small__img{
+        border-radius: 25px;
+    }
+    .about-wrapper__img{
+        grid-template-columns: repeat(1,1fr);
+    }
     .navigation-page__menu{
         opacity: 1;
         top: 0px;
@@ -1536,6 +1618,7 @@ body{
         border-radius: 35px;
         height: 365px;
         padding: 50px 27px;
+        background-position: center !important;
     }
     .main-banner__title {
         margin-bottom: 20px;
