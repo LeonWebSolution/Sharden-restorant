@@ -3,7 +3,15 @@ $(document).ready(function () {
     $(".navigation-page__menu").toggleClass("active");
     $(this).toggleClass("active");
     $("body").toggleClass("hidden");
-});
+  });
+
+  $(".lk-btn").click(function () {
+    $(".popup-join").fadeIn();
+  });
+
+  $(".close-join").click(function () {
+      $(".popup-join").fadeOut();
+  });
 
 $(".btn-close__menu").click(function() {
     $(".navigation-page__menu").removeClass("active");
@@ -20,6 +28,7 @@ $(".btn-close__menu").click(function() {
         $(".search-block").removeClass("active");
         $(".search-btn").removeClass("close");
     });
+
 
     $('.new-slider').slick({
         infinite: true,
@@ -42,5 +51,7 @@ $(".btn-close__menu").click(function() {
           ]
       });
 });
+
+
 
 
