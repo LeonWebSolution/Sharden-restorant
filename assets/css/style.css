@@ -752,6 +752,9 @@ body{
 .menu-restoran .mountains-img{
     bottom: -230px;
 }
+.rec-join2.mobile{
+    display: none;
+}
 .menu-items__wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
