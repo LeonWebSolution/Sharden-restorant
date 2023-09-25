@@ -1139,6 +1139,8 @@ body{
 .footer{
     padding: 86px 0 107px;
     background-color: var(--brown);
+    position: relative;
+    z-index: 7777777;
 }
 .footer .container{
     display: flex;
