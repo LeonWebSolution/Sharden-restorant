@@ -1493,6 +1493,107 @@ body{
 }
 /* END OFFER*/
 
+/* START PRODUCT*/
+
+.menu-items__wrapper.one-product{
+    display: block;
+    position: relative;
+    margin-bottom: 46px;
+}
+.one-product__item__inner{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: end;
+    left: 66px;
+    right: 66px;
+    bottom: 60px;
+}
+.prev-page{
+    position: absolute;
+    top: 52px;
+    left: 66px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.name-category{
+    font-size: 26.667px;
+    font-weight: 400;
+    line-height: 26.667px;
+    opacity: 0.5;
+}
+.product-name{
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+.prev-page__btn{
+    font-size: 26.667px;
+    font-weight: 600;
+    line-height: 26.667px;
+}
+.one-product__item__inner-right{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+.product-one-price{
+    font-size: 32px; 
+    font-weight: 700;
+    line-height: 26.667px; 
+}
+.info-one__product{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 66px;
+}
+.info-one__product-text{
+    font-size: 21.333px;
+    font-weight: 500;
+    color: var(--brown);
+}
+.info-one__product-left{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.kg, .kkal, .belk{
+    color: var(--yellow);
+    text-align: center;
+}
+.right-one__text{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.right-one__text span{
+    background: linear-gradient(147deg, #EBBD71 18.68%, #EFA52C 93.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 600;
+}
+.compound{
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 60px;
+    border-radius: 33.333px;
+    border: 1.333px solid #EBBD71;
+}
+.cart-buy{
+    width: 100%;
+    font-size: 26.667px;
+    font-weight: 600;
+    color: var(--white);
+    padding: 17px 0;
+    border-radius: 33.333px;
+    background: linear-gradient(147deg, #EBBD71 18.68%, #EFA52C 93.9%);
+}
+.offer-info.one-info{
+    height: 880px;
+}
+/* END PRODUCT*/
+
 /* START FOOTER*/
 
 .footer{
@@ -1536,6 +1637,18 @@ body{
 /* END FOOTER */
 
 @media (max-width: 1440px) {
+    .prev-page{
+        top: 36px;
+        left: 50px;
+        gap: 15px;
+    }
+    .prev-page__btn{
+        font-size: 20px;
+    }
+    .prev-page svg{
+        width: 6px;
+        height: 12px;
+    }
     .city-item{
         padding: 18px 30px;
         font-size: 20px;
@@ -2112,8 +2225,52 @@ body{
         width: 30px;
         height: 30px;
     }
-    
-
+    .prev-page{
+        top: 36px;
+        left: 50px;
+        gap: 15px;
+    }
+    .prev-page__btn{
+        font-size: 20px;
+    }
+    .prev-page svg{
+        width: 6px;
+        height: 12px;
+    }
+    .name-category{
+        font-size: 20px;
+    }
+    .one-product__item__inner{
+        left: 50px;
+        right: 50px;
+        bottom: 56px;
+    }
+    .product-name{
+        font-size: 36px;
+    }
+    .plus-product{
+        width: 40px;
+        height: 40px;
+    }
+    .product-one-price{
+        font-size: 24px;
+    }
+    .cart-buy{
+        font-size: 20px;
+    }
+    .info-one__product-text{
+        font-size: 16px;
+    }
+    .compound{
+        padding: 16px 45px;
+        font-size: 14px !important;
+    }
+    .info-one__product-left{
+        gap: 45px;
+    }
+    .info-one__product{
+        gap: 50px;
+    }
     .footer{
         padding: 65px 0 87px;
     }
@@ -2493,6 +2650,20 @@ body{
         display: flex;
         background-size: cover !important;
         border-radius: 50px;
+    }
+    .info-one__product {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 66px;
+    }
+    .info-one__product-text{
+        text-align: center;
+    }
+    .compound{
+        margin: 0 25px;
+    }
+    .info-one__product{
+        gap: 25px;
     }
 }
 
@@ -3059,5 +3230,46 @@ body{
     }
     .contact-item__cont{
         font-size: 12px;
+    }
+    .info-one__product-left {
+        gap: 15px;
+    }
+    .one-product-rest .mountains-img.mobile{
+        display: none;
+    }
+    .menu-items__wrapper.one-product{
+        margin-bottom: 15px;
+    }
+    .prev-page{
+        top: 20px;
+        left: 25px;
+    }
+    .prev-page__btn{
+        font-size: 14px;
+    }
+    .name-category{
+        font-size: 10px;
+        line-height: normal;
+    }
+    .one-product__item__inner{
+        left: 25px;
+        bottom: 28px;
+        right: 25px;
+    }
+    .product-name{
+        font-size: 18px;
+    }
+    .one-product__item__inner-right{
+        gap: 11px;
+    }
+    .plus-product{
+        width: 21px;
+        height: 22px;
+    }
+    .product-one-price{
+        font-size: 12px;
+    }
+    .cart-buy{
+        padding: 13px 0;
     }
 }
