@@ -1287,6 +1287,212 @@ body{
 }
 /* END SHOPPING-CART*/
 
+/* START OFFER*/
+
+.offer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 66px;
+}
+.offer-title{
+    margin-bottom: 46px;
+}
+.offer-info__buy,
+.offer-buy{
+    padding: 47px 66px;
+    border-radius: 33.333px;
+    background: var(--white);
+    box-shadow: 0px 0px 133.33334px 0px rgba(0, 0, 0, 0.10);
+}
+.city-options{
+    margin-bottom: 60px;
+}
+
+.buy-title{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--brown);
+    margin-bottom: 30px;
+}
+.city-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.city-item{
+    padding: 24px 40px;
+    font-size: 26.667px;
+    font-weight: 500;
+    color: var(--brown);
+    border-radius: 33.333px;
+    background: rgba(172, 98, 80, 0.10);    
+}
+.city-item.active{
+    background: linear-gradient(147deg, #EBBD71 18.68%, #EFA52C 93.9%);
+    color: var(--white);
+}
+.buy-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.buy-input{
+    color: var(--brown);
+    padding: 24px 40px;
+    width: 100%;
+    border-radius: 33.333px;
+    background: rgba(235, 189, 113, 0.1);
+    outline: none;
+    resize: none;
+}
+.buy-input.textr{
+    height: 180px;
+}
+.buy-input::placeholder{
+    color: rgba(172, 98, 80, 0.4);;
+    font-weight: 500;
+}
+.buy-input.width-small{
+    width: 31%;
+}
+.buy-label{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+.radio-btn{
+    border: 2px solid #AC6250;
+    border-radius: 50%; 
+    width: 27px; 
+    height: 27px; 
+    outline: none; 
+}
+.radio-btn:checked{
+    background-color: #EBBD71;
+}
+.label-radio{
+    font-size: 18.667px;
+    color: var(--brown); 
+    font-weight: 500;
+}
+.buy-adress{
+    margin-bottom: 60px;
+}
+.time-title{
+    margin-bottom: 13px;
+}
+.buy-suptitle{
+    color: var(--brown);
+    font-size: 21.333px;
+    font-weight: 500;
+}
+.buy-suptitle span{
+    font-weight: 700;
+}
+.buy-time{
+    margin-bottom: 60px;
+}
+.buy-items__wrapper{
+    padding-top: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.buy-items__wrapper .product-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.buy-items__wrapper .product-item .product-item__content{
+    width: 100%;
+}
+.buy-items__wrapper .product-item .product-img{
+    width: 180px;
+    height: 120px;
+    border-radius: 26.667px;
+}
+.buy-items__wrapper .product-item .product-item__wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.buy-items__wrapper .product-item .product-item__wrapper .product-btn{
+    display: none;
+}
+.buy-items__wrapper .product-item .product-item__wrapper .product-price{
+    box-shadow: none;
+    color: var(--yellow);
+}
+.coll{
+    display: none;
+    font-size: 21.333px;
+    font-weight: 600;
+    color: var(--brown);
+}
+.buy-items__wrapper .product-item .product-item__wrapper .coll{
+    display: block;
+}
+.offer-buy{
+    height: 615px;
+}
+.oplata{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.oplata-summ{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.items-sum,
+.itog-sum{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.items-sum-title,
+.sum-items{
+    font-size: 26.667px;
+    opacity: 0.5;
+    font-weight: 500;
+    color: var(--brown);
+}
+.select-input{
+    font-size: 26.667px;
+    font-weight: 500;
+}
+.input-sdach{
+    font-size: 26.667px;  
+}
+.itog-sum-title,
+.itog-sum-items{
+    font-size: 26.667px;
+    font-weight: 600;
+    color: var(--brown);
+}
+.buy-items-btn{
+    margin-top: 50px !important;
+    width: 100%;
+    padding: 26px 0;
+    border-radius: 33.333px;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--white);
+    background: linear-gradient(147deg, #EBBD71 18.68%, #EFA52C 93.9%);
+}
+.header-opl .rec-img{
+    left: auto;
+    right: 100px;
+}
+.offer .mountains-img{
+    bottom: -270px;
+}
+/* END OFFER*/
+
 /* START FOOTER*/
 
 .footer{
@@ -1330,7 +1536,77 @@ body{
 /* END FOOTER */
 
 @media (max-width: 1440px) {
-    
+    .city-item{
+        padding: 18px 30px;
+        font-size: 20px;
+    }
+    .header-opl .rec-img {
+        left: auto;
+        right: 70px;
+        width: auto;
+        height: auto;
+    }
+    .offer-main.container{
+        padding: 0;
+    }
+    .city-wrapper {
+        gap: 10px;
+    }
+    .buy-input.textr {
+        height: 135px;
+    }
+    .buy-suptitle{
+        font-size: 16px;
+    }
+    .buy-time {
+        margin-bottom: 45px;
+    }
+    .buy-title{
+        margin-bottom: 25px;
+    }
+    .offer-buy{
+        height: 460px;
+    }
+    .items-sum-title, .sum-items {
+        font-size: 20px;
+    }
+    .itog-sum-title, .itog-sum-items {
+        font-size: 20px;
+    }
+    .buy-items-btn{
+        margin-top: 30px !important;
+        padding: 20px;
+        font-size: 24px;
+    }
+    .radio-btn {
+        width: 20px;
+        height: 20px;
+    }
+    .label-radio{
+        font-size: 14px;
+    }
+    .offer-wrapper{
+        gap: 50px;
+    }
+    .buy-input{
+        font-size: 20px;
+        padding: 18px 30px;
+    }
+    .offer-title{
+        margin-bottom: 35px;
+    }
+    .offer-info__buy, .offer-buy{
+        padding: 35px 50px;
+    }
+    .city-options{
+        margin-bottom: 45px;
+    }
+    .buy-form{
+        gap: 15px;
+    }
+    .buy-title{
+        font-size: 24px;
+    }
     .shopping-cart-page{
         gap: 50px !important;
     }
@@ -1858,6 +2134,12 @@ body{
     }
 }
 
+@media(max-width: 1280px){
+    .offer-main.container{
+        padding: 0 15px;
+    }
+}
+
 @media (max-width: 1148px){
     .lk-contants__wrapper{
         flex-direction: column;
@@ -1935,6 +2217,25 @@ body{
 }
 
 @media (max-width: 850px){
+    .offer-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .buy-items__wrapper .product-item .product-item__wrapper{
+        padding: 0;
+        border: none;
+    }
+    .buy-items__wrapper .product-item .product-item__wrapper .gramms{
+        display: none;
+    }
+    .offer-info__buy, .offer-buy {
+        padding: 20px 27px;
+    }
+    .buy-items__wrapper .product-item .product-info{
+        display: none;
+    }
+    .buy-form{
+        justify-content: space-between;
+    }
     .shopping-cart__wrapper .index-bg{
         left: 0;
         right: 0;
@@ -2254,6 +2555,86 @@ body{
 }
 
 @media (max-width:520px) {
+    .offer .mountains-img.mobile{
+        bottom: -550px;
+    }
+    .header-opl .rec-img {
+        left: -150px;
+    }
+    .offer-info__buy, .offer-buy {
+        padding: 20px 27px;
+        border-radius: 15px;
+    }
+    .itog-sum-title, .itog-sum-items {
+        font-size: 12px;
+    }
+    .city-item{
+        font-size: 12px;
+        padding: 9px 16px;
+    }
+    .offer-buy{
+        height: 270px;
+    }
+    .city-options {
+        margin-bottom: 25px;
+    }
+    .oplata-summ{
+        gap: 8px;
+    }
+    .buy-items-btn {
+        margin-top: 20px !important;
+        padding: 11px;
+        font-size: 14px;
+    }
+    .oplata{
+        margin-bottom: 15px;
+        gap: 8px;
+    }
+    .items-sum-title, .sum-items {
+        font-size: 12px;
+    }
+    .buy-items__wrapper .product-item .product-img {
+        width: 77.143px;
+        height: 51.429px;
+        border-radius: 11.429px;
+    }
+    .label-radio{
+        font-size: 10px;
+    }
+    .radio-btn {
+        width: 11px;
+        height: 11px;
+    }
+    .buy-items__wrapper .product-item .product-item__wrapper .product-item__title {
+        font-size: 10px;
+    }
+    .offer-wrapper {
+        gap: 35px;
+    }
+    .buy-items__wrapper .product-item .product-item__wrapper .coll {
+        font-size: 9px;
+    }
+    .buy-adress{
+        margin-bottom: 25px;
+    }
+    .buy-suptitle{
+        font-size: 10px;
+    }
+    .buy-time {
+        margin-bottom: 25px;
+    }
+    .buy-title {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .buy-form {
+        gap: 8px;
+    }
+    .buy-input {
+        font-size: 12px;
+        padding: 10px 17px;
+        border-radius: 14.286px;
+    }
     .shopping-cart__wrapper .product-item .product-img{
         border-radius: 11px;
     }
