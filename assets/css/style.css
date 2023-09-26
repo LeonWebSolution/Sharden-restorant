@@ -1135,6 +1135,20 @@ body{
 /* END LK*/
 
 /* START SHOPPING-CART*/
+.circle-carto{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.circle-cartt{
+    position: absolute;
+    left: 0;
+    bottom: -450px;
+    z-index: -1;
+}
+.shopping-cart__wrapper .product-item .product-img{
+    border-radius: 27px;
+}
 .shopping-cart__wrapper .index-bg{
     left: 0;
     right: 0;
@@ -2240,6 +2254,9 @@ body{
 }
 
 @media (max-width:520px) {
+    .shopping-cart__wrapper .product-item .product-img{
+        border-radius: 11px;
+    }
     .shopping-cart__wrapper .index-bg{
         left: 0;
         right: 0;
