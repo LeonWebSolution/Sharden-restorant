@@ -52,6 +52,17 @@ $(".btn-close__menu").click(function() {
       });
 });
 
+$('.sale-banner').slick({
+  speed: 1500,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  fade: true,
+  arrows: false,
+});
+
+
+
 
 
 
